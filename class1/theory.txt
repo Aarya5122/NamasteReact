@@ -1,0 +1,92 @@
+1) What is Emmet?
+
+* Emmet is a plugin
+* Emmet is a shorthand used to write HTML faster
+
+2) Library v/s Framework
+
+Library: 
+    * Reusable Function are provided
+    * Inversion of control: When we use library we are incharge of flow of application.
+      That is we can choose when and where to call the library.
+    * Improves performance
+    * Pick libraries we want
+    * Easily replaceable
+
+Framework:
+    * Provides predefined Architecture, Templates, Compilers, API's and Set of libraires 
+    * Inversion of control: When we use framework. Framework itself taked incharge of flow of application.
+      That is Framework specifies when to call a library.
+    * Faster Development of application
+    * More code
+    * Options to tweak functionality is less
+    * Application should follow framework guideline
+
+
+3) What is CDN? Why do we use it?
+
+* Content Delivery Network
+* Distributed and Interconnected servers
+* Chache the content from origin server and provide to user for fast delivery of service.
+* Time Efficient, Availability, Optimized, Security, Cost Saving
+
+
+4) Why is React known as React?
+
+* React is a frontend library
+* React is Component Based
+* React is used to build SPA - Single Page Applications
+* React is used to build Reusable Components
+* React is learn once write anywhere
+
+
+5) What is crossorigin in script tag?
+
+* Provides support to CORS
+* how element handles cross-origin request
+* crossorigin="anonymous" or crossorigin - enables CORS headers but user credentials are not shared cross origin.
+* crossorigin="use-credentials" - enables CORS header and shares user credentials to cross origins.
+* user credentials are carried via cookies, client side SSL certificates, HTTP authentication
+* In terms of react it supports in error handling from React V16
+
+
+6) What is diference between React and ReactDOM?
+
+* In React v0.14 - they split
+
+React:
+    * The react package holds the react source for components, state, props and all the code that is react.
+    * used with mobile and web Applications
+
+React DOM:
+    * The react-dom package as the name implies is the glue between React and the DOM.
+    * Used to render react element in browser
+    * used only with web Applications
+
+
+7) What is difference between react.development.js and react.production.js files via CDN?
+
+react.development.js
+    * The code in this file does not have Long Time Support enabled
+    * The code gives us new functionalities being developed in beta version which is still not standardized
+    * The code file is not optimised and minified
+
+
+react.production.min.js
+    * The code in this file has Long Time Support enabled
+    * Code in the file is more optimised and minified
+
+
+8) What is async and defer?
+
+Default case:
+    * When script tag is found HTML Parsing is stopped 
+    * Fetch and Executed the script tag
+
+Async Case:
+    * Script are fetched asychronously when script tag is found in HTML Parsing
+    * When Script is fetched it stops the HTML parsing and executes it
+
+Defer Case: 
+    * * Script are fetched asychronously when script tag is found in HTML Parsing
+    * When HTML parsing is completed the script fetched is executed
