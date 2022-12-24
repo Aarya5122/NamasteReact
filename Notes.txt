@@ -1,0 +1,31 @@
+//TODO: Class One - Inception
+
+Homework:
+    Emmet
+    CDN - Content Delivery Network
+    Cross Origin
+    Async Defer in Script Tag
+    React.CreateElement
+    ReactDOM.CreateRoot
+    Objects Created
+
+Library:
+    Easy to implement
+    Similar to JQUERY
+
+React and React DOM - (React Native, React 3D)
+    React - Core Version
+    ReactDOM - Web Version (Virtual DOM)
+
+React Facts:
+    React will override the root element.
+    Content inside root element is display if react is having issues to load (network/local/cache).
+
+React Initial Goal:
+    HTML inside Javascript
+    CSS inside Javascript
+    Async Data Request
+
+
+
+
