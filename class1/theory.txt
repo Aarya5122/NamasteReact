@@ -86,7 +86,9 @@ Default case:
 Async Case:
     * Script are fetched asychronously when script tag is found in HTML Parsing
     * When Script is fetched it stops the HTML parsing and executes it
+    * Order of execution is not guranteed
 
 Defer Case: 
     * * Script are fetched asychronously when script tag is found in HTML Parsing
     * When HTML parsing is completed the script fetched is executed
+    * Order of execution is guranteed
