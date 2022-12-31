@@ -38,6 +38,15 @@ Arrow Function:
 
 
 FIXME: NOTE: React.Children.toArray(map function)
+FIXME: NOTE: transpiler - babel
+FIXME: NOTE: -D === --save-dev
+FIXME: npx parcel index.html 
+            excute parcel using npm with index.html as entry point 
+            development build
+            Runs on local server port 1234
+FIXME: npx parcel build index.html 
+FIXME: npx parcel build index.html --https
+FIXME: Anything that we can create using the production server we put that in .gitignore
 
 Production Ready Tips:
     Bundle
@@ -45,6 +54,7 @@ Production Ready Tips:
     Clean console.log
     Optimise
     Caching
+    Tree Shaking
 
 
 Bundlers:
@@ -53,12 +63,42 @@ Bundlers:
     Vite - Fast
     Gulp
 
-FIXME: NOTE: transpiler - babel
-
-
 Package Managers: 
-    NPM
+    NPM - powered by lot of things or helper packages. These helper packages are available in NPM
     Yarn
 
 Testing Command: 
     Jest
+
+package.json:
+    ^ - Future Compatible
+    ~ - Backward Compatible
+    none - Fix
+
+package-lock.json:
+    Version - Exact versioning of package in production
+    Important file, It locks the version, Never keep it in on gitignore (Works Fine Locally)
+    Integrity - hashes the detials of package and checks for Integrity in production
+    
+node_modules
+    Database - For NPM packages
+    Audited Packages
+
+Class Notes:
+    Modules in browser script is not supported hence we pass type="module" in script.
+    Hot Module Replacement (HMR) - Live Server
+    File Watcher Algorithm - C++
+    Production and Dev build
+    Fast Builds
+    Image Optimization
+    Bundle, Differentail Bundling, Minify JS, Compress JS, Optimise code, Cleans Code
+    Caching while development
+    Compatible with older version of browser (Adds polyfills) - BrowserList package
+    Functionality to enable HTTPS on dev machine
+    PORT Numbers
+    Consistent Hashing Algorithm
+    Zero Configuration Bundlers
+    TRANSITIVE DEPENDENCY - dependency ka dependency
+
+Homw Work:
+    Script types

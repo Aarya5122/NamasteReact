@@ -4,11 +4,20 @@
   "description": "Igniting React App",
   "main": "App.js",
   "scripts": {
+    "start": "npx parcel index.html",
     "test": "jest"
   },
   "author": "Aarya",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.2"
-  }
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    
+  ]
 }
