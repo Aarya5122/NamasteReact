@@ -13,7 +13,7 @@ Library:
     Easy to implement
     Similar to JQUERY
 
-React and React DOM - (React Native, React 3D)
+React and React DOM - (React Native, React Three)
     React - Core Version
     ReactDOM - Web Version (Virtual DOM)
 
@@ -26,6 +26,39 @@ React Initial Goal:
     CSS inside Javascript
     Async Data Request
 
+Arrow Function:
+    * "this" refers to lexical parent object of the Object calling it.
 
 
+********************************************************************************************************
+********************************************************************************************************
+                            TODO: Chapter Two - Igniting Our App TODO: 
+********************************************************************************************************
+********************************************************************************************************
 
+
+FIXME: NOTE: React.Children.toArray(map function)
+
+Production Ready Tips:
+    Bundle
+    Minify
+    Clean console.log
+    Optimise
+    Caching
+
+
+Bundlers:
+    Parcel - Easy Setup, Usability
+    Webpack - By React (Babel - Transpiler)
+    Vite - Fast
+    Gulp
+
+FIXME: NOTE: transpiler - babel
+
+
+Package Managers: 
+    NPM
+    Yarn
+
+Testing Command: 
+    Jest
