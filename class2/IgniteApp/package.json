@@ -1,0 +1,14 @@
+{
+  "name": "igniteapp",
+  "version": "1.0.0",
+  "description": "Igniting React App",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Aarya",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
