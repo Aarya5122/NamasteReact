@@ -51,10 +51,10 @@ FIXME: Anything that we can create using the production server we put that in .g
 Production Ready Tips:
     Bundle
     Minify
-    Clean console.log
+    Clean console.log - We have to config - Babel plugin transform remove console
     Optimise
     Caching
-    Tree Shaking
+    Tree Shaking - Removing unwanted code like methods provided by packages which are not used.
 
 
 Bundlers:
@@ -100,5 +100,35 @@ Class Notes:
     Zero Configuration Bundlers
     TRANSITIVE DEPENDENCY - dependency ka dependency
 
+Webpack - Lot of Configuration 
+
 Homw Work:
     Script types
+
+
+********************************************************************************************************
+********************************************************************************************************
+                            TODO: Chapter Three - Laying the foundation TODO: 
+********************************************************************************************************
+********************************************************************************************************
+
+BABEL - converts new functionality code to be supported in order version - polyfills
+
+BABEL to remove console.log() => babel-plugin-tranform-remove-console
+    create .babelrc file - Configuration file
+    copy paste config from npm
+    Babel converts the JSX expressions to React object.
+
+JSX - Javascript XML - Javascript Syntax Extension - Javascript Executable.
+    HTML like Syntax
+    But not HTML inside JS
+    JSX Expression
+
+Components 
+    Functionality
+    Class Based
+
+Component Composition - Component inside Component
+XSS Attack
+Key Reconciliation
+

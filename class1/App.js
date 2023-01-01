@@ -149,10 +149,21 @@ const containerTwo = React.createElement("div", {
 }, ["Container Two", heading, headingTwo, containerChild])
 
 
+
+/****************************
+ Functional Component
+*****************************/
+function Component(props){
+    const {name} = props;
+    return React.createElement("h1", {key:"Component"}, "Hello ", name)
+}
+const component = Component({name: "Nagaraj Nirmala Aarya"})
+
+
 /****************************
  Root Container
 *****************************/
 const root = ReactDOM.createRoot(document.getElementById("root"))
 console.log(root);
 
-root.render([parentContainer, containerOne, containerTwo]);
+root.render([parentContainer, containerOne, containerTwo, component]);
