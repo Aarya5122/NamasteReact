@@ -16,6 +16,10 @@
   gap: 8;
 }
 
+.gap-0{
+  gap: 0;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -70,13 +74,14 @@ hr{
 }
 
 .hotel-name {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  margin-block: 5px;
 }
 
 .food-description {
   font-size: 14px;
-  margin-block: 2px;
+  margin-block: 4px;
 }
 
 .rating {
@@ -88,4 +93,13 @@ hr{
   font-weight: 600;
   color: #ffffff;
   border-radius: 4px;
+}
+
+.search-bar {
+  padding: 6px ;
+  width: 30%;
+}
+
+.button {
+  padding: 6px 26px;
 }

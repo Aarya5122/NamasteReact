@@ -3,15 +3,17 @@ import React from "react";
 
 //Components
 import Header from "./Components/Header";
+import RestaurantList from "./Components/RestaurantsList";
+import SearchBar from "./Components/SearchBar";
 
 //CSS
 import "./App.css"
-import RestaurantList from "./Components/RestaurantsList";
 
 const App = () => {
     return(
         <>
             <Header/>
+            <SearchBar/>
             <RestaurantList/>
         </>
     )

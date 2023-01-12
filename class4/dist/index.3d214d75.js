@@ -27118,21 +27118,28 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 //Components
 var _header = require("./Components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
-//CSS
-var _appCss = require("./App.css");
 var _restaurantsList = require("./Components/RestaurantsList");
 var _restaurantsListDefault = parcelHelpers.interopDefault(_restaurantsList);
+var _searchBar = require("./Components/SearchBar");
+var _searchBarDefault = parcelHelpers.interopDefault(_searchBar);
+//CSS
+var _appCss = require("./App.css");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 14,
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchBarDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantsListDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined)
         ]
@@ -27148,7 +27155,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/Header":"huOh1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./App.css":"7g3a6","./Components/RestaurantsList":"kksWI"}],"huOh1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/Header":"huOh1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./App.css":"7g3a6","./Components/RestaurantsList":"kksWI","./Components/SearchBar":"gW2gi"}],"huOh1":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b95f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27402,83 +27409,90 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 const foodItems = [
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rwwc0xufjuiityzgpfme",
+        name: "Auntie Fung's",
+        description: "Chinese, Thai, Asian",
+        rating: "4.1"
     },
     {
         imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
         name: "Burger King",
         description: "Burgers, American",
-        rating: 4.2
+        rating: "4.2"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/t34dyumfv7orfffvqz5x",
+        name: "IFC",
+        description: "Burgers",
+        rating: "4.2"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ar820jxombs5o1g9i6py",
+        name: "Kwality Walls",
+        description: "Desserts, Ice Cream, Ice Cakes",
+        rating: "4.8"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pyaldv7cmusdapqzdiqx",
+        name: "Pizza Hut",
+        description: "Pizzas",
+        rating: "4.0"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/51bd9c7efcc0e05c614c0e0674434e62",
+        name: "NOTO - Healthy Ice Cream",
+        description: "Ice Cream",
+        rating: "4.2"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mhsqvfxemqhklv0rabmh",
+        name: "Chinese BAE",
+        description: "Chinese, Thai, Seafood",
+        rating: "4.0"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/0e8f93a56b93e43d7627c2c21bc1106c",
+        name: "McDonald's",
+        description: "Burgers, Beverages, Cafe, Desserts",
+        rating: "4.4"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/yeaxr6hurmcf6z0znx5w",
+        name: "Baskin Robbins ",
+        description: "Desserts, Ice Cream",
+        rating: "4.3"
     },
     {
-        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
-        name: "Burger King",
-        description: "Burgers, American",
-        rating: 4.2
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lpsesagdwtgfpjkvzcw7",
+        name: "Imperio Juice and Cafe",
+        description: "Juices",
+        rating: "4.2"
     }
 ];
 const RestaurantList = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex flex-wrap gap-20 food-list-container",
-        children: foodItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                name: item.name,
-                description: item.description,
-                rating: item.rating,
-                imgSrc: item.imgSrc
-            }, void 0, false, {
-                fileName: "Components/RestaurantsList.jsx",
-                lineNumber: 80,
-                columnNumber: 9
-            }, undefined))
+        children: foodItems.map((item, index)=>// <RestaurantCard
+            //   name={item.name}
+            //   description={item.description}
+            //   rating={item.rating}
+            //   imgSrc={item.imgSrc}
+            // />
+            /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
+                ...item,
+                key: index,
+                __source: {
+                    fileName: "Components/RestaurantsList.jsx",
+                    lineNumber: 86,
+                    columnNumber: 9
+                },
+                __self: undefined
+            }))
     }, void 0, false, {
         fileName: "Components/RestaurantsList.jsx",
         lineNumber: 78,
@@ -27495,7 +27509,7 @@ $RefreshReg$(_c, "RestaurantList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"lDrFO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lDrFO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"lDrFO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"lDrFO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$496a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27560,6 +27574,56 @@ var _c;
 $RefreshReg$(_c, "RestaurantCard");
 
   $parcel$ReactRefreshHelpers$496a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gW2gi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1be1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1be1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const SearchBar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+        className: "flex gap-0",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                className: "search-bar",
+                type: "text",
+                name: "query",
+                placeholder: "Enter the items or restuarant to search"
+            }, void 0, false, {
+                fileName: "Components/SearchBar.jsx",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "button",
+                type: "button",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "Components/SearchBar.jsx",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "Components/SearchBar.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = SearchBar;
+exports.default = SearchBar;
+var _c;
+$RefreshReg$(_c, "SearchBar");
+
+  $parcel$ReactRefreshHelpers$1be1.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

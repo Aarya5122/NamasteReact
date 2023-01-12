@@ -16,6 +16,10 @@
   gap: 8px;
 }
 
+.gap-0 {
+  gap: 0;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -70,12 +74,13 @@ hr {
 }
 
 .hotel-name {
-  font-size: 18px;
+  margin-block: 5px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .food-description {
-  margin-block: 2px;
+  margin-block: 4px;
   font-size: 14px;
 }
 
@@ -88,6 +93,15 @@ hr {
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
+}
+
+.search-bar {
+  width: 30%;
+  padding: 6px;
+}
+
+.button {
+  padding: 6px 26px;
 }
 
 /*# sourceMappingURL=index.e6b5c606.css.map */
