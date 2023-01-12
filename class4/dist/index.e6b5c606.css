@@ -1,0 +1,25 @@
+.flex {
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+}
+
+header {
+  margin: 5px 16px;
+  padding: 2px 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=index.e6b5c606.css.map */

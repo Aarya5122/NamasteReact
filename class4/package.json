@@ -1,0 +1,20 @@
+{
+  "name": "class4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^2.8.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Food villa is a food ordering application"
+}

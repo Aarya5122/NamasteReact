@@ -1,0 +1,23 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+}
+
+header{
+    margin: 5px 16px;
+    padding: 2px 16px;
+}
+
+ul{
+    list-style: none;
+}
