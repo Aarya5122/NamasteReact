@@ -27120,14 +27120,23 @@ var _header = require("./Components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 //CSS
 var _appCss = require("./App.css");
+var _restaurantsList = require("./Components/RestaurantsList");
+var _restaurantsListDefault = parcelHelpers.interopDefault(_restaurantsList);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-            fileName: "App.jsx",
-            lineNumber: 13,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantsListDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = App;
 exports.default = App;
@@ -27139,7 +27148,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/Header":"huOh1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./App.css":"7g3a6"}],"huOh1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/Header":"huOh1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./App.css":"7g3a6","./Components/RestaurantsList":"kksWI"}],"huOh1":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b95f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27383,6 +27392,178 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"fbec552c961826dc":"786KC"}],"7g3a6":[function() {},{}]},["1xC6H","awEvQ","bB7Pu"], "bB7Pu", "parcelRequire7d18")
+},{"fbec552c961826dc":"786KC"}],"7g3a6":[function() {},{}],"kksWI":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$63f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$63f6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+const foodItems = [
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    },
+    {
+        imgSrc: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vb9qcw8np3sjkj2dtksl",
+        name: "Burger King",
+        description: "Burgers, American",
+        rating: 4.2
+    }
+];
+const RestaurantList = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap gap-20 food-list-container",
+        children: foodItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                name: item.name,
+                description: item.description,
+                rating: item.rating,
+                imgSrc: item.imgSrc
+            }, void 0, false, {
+                fileName: "Components/RestaurantsList.jsx",
+                lineNumber: 80,
+                columnNumber: 9
+            }, undefined))
+    }, void 0, false, {
+        fileName: "Components/RestaurantsList.jsx",
+        lineNumber: 78,
+        columnNumber: 5
+    }, undefined);
+};
+_c = RestaurantList;
+exports.default = RestaurantList;
+var _c;
+$RefreshReg$(_c, "RestaurantList");
+
+  $parcel$ReactRefreshHelpers$63f6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"lDrFO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lDrFO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$496a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$496a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const RestaurantCard = ({ imgSrc , name , description , rating  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "food-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: imgSrc,
+                alt: "Food image",
+                className: "food-img"
+            }, void 0, false, {
+                fileName: "Components/RestaurantCard.jsx",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "hotel-name",
+                children: name
+            }, void 0, false, {
+                fileName: "Components/RestaurantCard.jsx",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "food-description",
+                children: description
+            }, void 0, false, {
+                fileName: "Components/RestaurantCard.jsx",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "rating",
+                children: rating
+            }, void 0, false, {
+                fileName: "Components/RestaurantCard.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                fileName: "Components/RestaurantCard.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "Components/RestaurantCard.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$496a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","awEvQ","bB7Pu"], "bB7Pu", "parcelRequire7d18")
 
 //# sourceMappingURL=index.3d214d75.js.map
