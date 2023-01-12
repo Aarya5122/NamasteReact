@@ -2909,18 +2909,32 @@ const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     children: "Layout the foundation of React"
 }, "one", false, {
     fileName: "App.js",
-    lineNumber: 5,
-    columnNumber: 1
-}, undefined) //JSX Expression
-;
+    lineNumber: 3,
+    columnNumber: 17
+}, undefined); //JSX Expression
 console.log(typeof heading);
 const headingTwo = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
     key: "two"
 }, "Trying out jsx");
+_c = headingTwo;
 console.log(typeof headingTwo);
-const Component = ({ name ="NAME"  })=>{
+const Component = ({ name ="NAME C1"  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "*****************"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "This is a component one"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: [
                     "Component ",
@@ -2928,50 +2942,63 @@ const Component = ({ name ="NAME"  })=>{
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined),
-            heading
+            heading,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "*****************"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 19,
+                columnNumber: 13
+            }, undefined)
         ]
     }, void 0, true);
 };
-_c = Component;
-const ComponentTwo = ({ name ="NAME"  })=>{
+_c1 = Component;
+const ComponentTwo = ({ name ="NAME C2"  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Component Two"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 13
             }, undefined),
             Component({
-                name: "Singh"
-            })
+                name
+            }),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Component, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined)
         ]
     }, void 0, true);
 };
-_c1 = ComponentTwo;
+_c2 = ComponentTwo;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render([
     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Component, {
         name: "Aarya"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 14
     }, undefined),
-    headingTwo,
-    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ComponentTwo, {}, void 0, false, {
+    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("headingTwo", {}, void 0, false, {
         fileName: "App.js",
-        lineNumber: 32,
-        columnNumber: 52
-    }, undefined)
+        lineNumber: 34,
+        columnNumber: 42
+    }, undefined),
+    headingTwo
 ]);
-var _c, _c1;
-$RefreshReg$(_c, "Component");
-$RefreshReg$(_c1, "ComponentTwo");
+var _c, _c1, _c2;
+$RefreshReg$(_c, "headingTwo");
+$RefreshReg$(_c1, "Component");
+$RefreshReg$(_c2, "ComponentTwo");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
@@ -27327,6 +27354,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"ed137b6b80bf2f5a":"786KC"}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire94c2")
+},{"ed137b6b80bf2f5a":"786KC"}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire8f28")
 
 //# sourceMappingURL=index.7826abd7.js.map

@@ -58,7 +58,7 @@ Production Ready Tips:
 
 
 Bundlers:
-    Parcel - Easy Setup, Usability
+    Parcel - Easy Setup, / Config (0), Usability
     Webpack - By React (Babel - Transpiler)
     Vite - Fast
     Gulp
@@ -102,7 +102,7 @@ Class Notes:
 
 Webpack - Lot of Configuration 
 
-Homw Work:
+Home Work:
     Script types
 
 
@@ -125,10 +125,14 @@ JSX - Javascript XML - Javascript Syntax Extension - Javascript Executable.
     JSX Expression
 
 Components 
-    Functionality
+    Functional
     Class Based
 
 Component Composition - Component inside Component
-XSS Attack
+XSS Attack - Cross side scripting attack - when mallicious code is inserted through api call
+
+JSX is secure It takes care of XSS Attack. Makes app safe from any kind of access by escaping it.
+JS sanitized in {} in JSX
+
 Key Reconciliation
 
