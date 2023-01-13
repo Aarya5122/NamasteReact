@@ -27177,53 +27177,54 @@ const Header = ()=>{
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 6,
-                columnNumber: 13
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 className: "flex",
                 style: {
-                    fontFamily: "system-ui"
+                    fontFamily: "Segoe UI",
+                    fontSize: "14px"
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 12,
-                        columnNumber: 17
+                        lineNumber: 8,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "About Us"
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 13,
-                        columnNumber: 17
+                        lineNumber: 9,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Contact Us"
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 14,
-                        columnNumber: 17
+                        lineNumber: 10,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Cart"
                     }, void 0, false, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 15,
-                        columnNumber: 17
+                        lineNumber: 11,
+                        columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 11,
-                columnNumber: 13
+                lineNumber: 7,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Header.jsx",
         lineNumber: 5,
-        columnNumber: 9
+        columnNumber: 7
     }, undefined);
 };
 _c = Header;
@@ -27623,11 +27624,13 @@ var _s = $RefreshSig$();
 const SearchBar = ({ setRestaurants  })=>{
     _s();
     const [searchTxt, setSearchTxt] = (0, _react.useState)("");
-    function filterRestaurants() {
+    function filterRestaurants(e) {
+        e.preventDefault();
         setRestaurants((0, _configDefault.default).FOOD_ITEMS.filter((item)=>item.name.includes(searchTxt)));
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
         className: "flex gap-0",
+        onSubmit: (e)=>filterRestaurants(e),
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 className: "search-bar",
@@ -27640,23 +27643,23 @@ const SearchBar = ({ setRestaurants  })=>{
                 }
             }, void 0, false, {
                 fileName: "src/Components/SearchBar.jsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 className: "button",
                 type: "button",
-                onClick: filterRestaurants,
+                onClick: (e)=>filterRestaurants(e),
                 children: "Search"
             }, void 0, false, {
                 fileName: "src/Components/SearchBar.jsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/SearchBar.jsx",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 5
     }, undefined);
 };

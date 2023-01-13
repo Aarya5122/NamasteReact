@@ -58,7 +58,7 @@ ul {
   margin: 20px 12px;
   padding: 12px;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 hr{
@@ -98,15 +98,17 @@ hr{
 .search-bar {
   padding: 6px ;
   width: 30%;
-  border: 1px solid #7e7e7e;
+  border: none;
+  border-bottom: 1px solid #7e7e7e;
   outline: none;
-  border-radius: 4px 0px 0px 4px;
+  font-size: 14px;
+  margin-right: 16px;
 }
 
 .button {
   padding: 6px 26px;
   border: 1px solid transparent;
   background: #ffe139;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 4px;
   font-weight: 700;
 }
