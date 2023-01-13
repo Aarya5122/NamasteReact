@@ -1,8 +1,10 @@
+import env from "../config"
+
 const Header = () => {
     return(
         <header className="flex justify-between">
             <img 
-                src="https://foodvilla.no/src/img/logo.png" 
+                src={env.LOGO_URL} 
                 alt="Food Villa Logo" 
                 className="logo"
             />
