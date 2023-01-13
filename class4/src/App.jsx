@@ -27,7 +27,6 @@ const App = () => {
         <Obj.TestComponent.Heading />
         <ParaD/> 
       */}
-      <SearchBar />
       <RestaurantList />
     </>
   );

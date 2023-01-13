@@ -27136,14 +27136,9 @@ const App = ()=>{
                 lineNumber: 21,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchBarDefault.default), {}, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantsListDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 31,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27490,31 +27485,48 @@ var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _config = require("../config");
 var _configDefault = parcelHelpers.interopDefault(_config);
+var _searchBar = require("./SearchBar");
+var _searchBarDefault = parcelHelpers.interopDefault(_searchBar);
+var _s = $RefreshSig$();
 const RestaurantList = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex flex-wrap gap-20 food-list-container",
-        children: (0, _configDefault.default).FOOD_ITEMS.map((item, index)=>// <RestaurantCard
-            //   name={item.name}
-            //   description={item.description}
-            //   rating={item.rating}
-            //   imgSrc={item.imgSrc}
-            // />
-            /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
-                ...item,
-                key: index,
-                __source: {
-                    fileName: "src/Components/RestaurantsList.jsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                },
-                __self: undefined
-            }))
-    }, void 0, false, {
-        fileName: "src/Components/RestaurantsList.jsx",
-        lineNumber: 6,
-        columnNumber: 5
-    }, undefined);
+    _s();
+    const [restaurants, setRestaurants] = (0, _react.useState)((0, _configDefault.default).FOOD_ITEMS);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchBarDefault.default), {
+                setRestaurants: setRestaurants
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantsList.jsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-wrap gap-20 food-list-container",
+                children: restaurants.map((item, index)=>// <RestaurantCard
+                    //   name={item.name}
+                    //   description={item.description}
+                    //   rating={item.rating}
+                    //   imgSrc={item.imgSrc}
+                    // />
+                    /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
+                        ...item,
+                        key: index,
+                        __source: {
+                            fileName: "src/Components/RestaurantsList.jsx",
+                            lineNumber: 20,
+                            columnNumber: 11
+                        },
+                        __self: undefined
+                    }))
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantsList.jsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
 };
+_s(RestaurantList, "i9PTIrh3wLlZ5lecT+TdZ9pMJJE=");
 _c = RestaurantList;
 exports.default = RestaurantList;
 var _c;
@@ -27525,7 +27537,7 @@ $RefreshReg$(_c, "RestaurantList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"dvwcO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN"}],"dvwcO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"dvwcO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../config":"jtCLN","./SearchBar":"hItTZ"}],"dvwcO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb8e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27604,7 +27616,16 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const SearchBar = ()=>{
+var _react = require("react");
+var _config = require("../config");
+var _configDefault = parcelHelpers.interopDefault(_config);
+var _s = $RefreshSig$();
+const SearchBar = ({ setRestaurants  })=>{
+    _s();
+    const [searchTxt, setSearchTxt] = (0, _react.useState)("");
+    function filterRestaurants() {
+        setRestaurants((0, _configDefault.default).FOOD_ITEMS.filter((item)=>item.name.includes(searchTxt)));
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
         className: "flex gap-0",
         children: [
@@ -27612,28 +27633,34 @@ const SearchBar = ()=>{
                 className: "search-bar",
                 type: "text",
                 name: "query",
-                placeholder: "Enter the items or restuarant to search"
+                placeholder: "Enter the items or restuarant to search",
+                value: searchTxt,
+                onChange: (e)=>{
+                    setSearchTxt(e.target.value);
+                }
             }, void 0, false, {
                 fileName: "src/Components/SearchBar.jsx",
-                lineNumber: 4,
-                columnNumber: 13
+                lineNumber: 15,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 className: "button",
                 type: "button",
+                onClick: filterRestaurants,
                 children: "Search"
             }, void 0, false, {
                 fileName: "src/Components/SearchBar.jsx",
-                lineNumber: 5,
-                columnNumber: 13
+                lineNumber: 25,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/SearchBar.jsx",
-        lineNumber: 3,
-        columnNumber: 9
+        lineNumber: 14,
+        columnNumber: 5
     }, undefined);
 };
+_s(SearchBar, "PFNpAs4hhzljDNv9vDAuJfopRAU=");
 _c = SearchBar;
 exports.default = SearchBar;
 var _c;
@@ -27644,6 +27671,6 @@ $RefreshReg$(_c, "SearchBar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6n0o6":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire7d18")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../config":"jtCLN"}],"6n0o6":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire7d18")
 
 //# sourceMappingURL=index.975ef6c8.js.map
